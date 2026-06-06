@@ -803,10 +803,10 @@ body {
         min-height: 950px;
     }
     .hero-left { max-width: 100%; text-align: center; align-items: center; display: flex; flex-direction: column; }
-    .hero-title { font-size: 55px; }
-    .hero-sub { font-size: 24px; margin: 0.5rem 0; }    
-    .hero-desc { font-size: 19.78px; text-align: justify; line-height: 1.6; margin: 0.5rem 0 1rem; }
-    .stats-row { font-size: 18px; justify-content: center; gap: 20px;}
+    .hero-title { font-size: 3.7rem; }
+    .hero-sub { font-size: 1.5rem; margin: 0.5rem 0; }    
+    .hero-desc { font-size: 1.24rem; text-align: justify; line-height: 1.6; margin: 0.5rem 0 1rem; }
+    .stats-row { font-size: 18rem; justify-content: center; gap: 20px;}
         .stat-num { font-size: 35px; }
         .stat-lbl { font-size: 13px; margin-top: 10px;}
         .btn-hero { font-size: 16px; padding: 18px 42px; }
