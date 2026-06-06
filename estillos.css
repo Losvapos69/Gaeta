@@ -776,7 +776,7 @@ body {
     .nav-links { display: none; }
     .btn-nav   { display: none; }
     .menu-toggle { display : flex; }
-    .nav-cta { padding-left: 58%;}
+    .nav-cta { padding-left: 12.2rem;}
     .nav-inner {
         margin-top: 5px;
         margin-left: 2%;
