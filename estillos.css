@@ -799,18 +799,17 @@ body {
         background-position: center;
         background-size: 330%;
         flex-direction: column;
-        font-size: 40px;
-        padding: 230px 22px 60px;
+        padding: 14rem 1.5rem 0rem;
         min-height: 950px;
     }
     .hero-left { max-width: 100%; text-align: center; align-items: center; display: flex; flex-direction: column; }
     .hero-title { font-size: 55px; }
-    .hero-sub { font-size: 24px; }    
-    .hero-desc { font-size: 19.78px; text-align: justify; line-height: 1.6; margin: 0 0 20px 0;}
+    .hero-sub { font-size: 24px; margin: 0.5rem 0; }    
+    .hero-desc { font-size: 19.78px; text-align: justify; line-height: 1.6; margin: 0.5rem 0 1rem; }
     .stats-row { font-size: 18px; justify-content: center; gap: 20px;}
         .stat-num { font-size: 35px; }
         .stat-lbl { font-size: 13px; margin-top: 10px;}
-        .btn-hero { font-size: 16px; padding: 18px 42px; margin-top: 10px; }
+        .btn-hero { font-size: 16px; padding: 18px 42px; }
     .hero-right { max-width: 100%; width: 100%; }
     .hero-img-card img { height: 300px; }
 
