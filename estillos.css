@@ -119,6 +119,7 @@ body {
     border-radius: 50px;
     white-space: nowrap;
     transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+    
     box-shadow: 0 4px 16px rgba(201,168,76,0.3);
 }
 
@@ -618,7 +619,7 @@ body {
 }
 
 .icon { font-size: 28px; margin-bottom: 14px; }
-
+.escudo-bg { width: auto; height: 45px; display: flex; justify-content: left; padding: 0px 0 10px; }
 .card h3 {
     font-family: 'Arial', serif;
     font-size: 18px;
@@ -778,7 +779,7 @@ body {
     .menu-toggle { display : flex; }
     .nav-cta { padding-left: 12.2rem;}
     .nav-inner {
-        margin-top: 5px;
+        margin-top: 2px;
         margin-left: 2%;
         padding: 0; }
     .nav-logo img { height: 60px; }
@@ -893,11 +894,12 @@ body {
    1080p — 1200px–2159px
    ============================================ */
 @media (min-width: 1200px) and (max-width: 2159px) {
-    .hero-left { max-width: 480px; margin-top: 60px;}
-    .hero-title { font-size: 75px; }
-    .hero-sub   { font-size: 28px; }
-    .hero-desc  { font-size: 20px; }
-    .stat-num   { font-size: 48px; }
+    .hero-left { max-width: 480px; margin-top: 90px;}
+    .hero-title { font-size: 65px; line-height: 1;}
+    .hero-sub   { font-size: 23px; padding: 0 0; margin-bottom: 17px; }
+    .hero-desc  { font-size: 19px; margin-bottom: 13px; }
+    .stats-row { margin-bottom: 25px; }
+    .stat-num   { font-size: 42px; }
     .stat-lbl   { font-size: 15px; }
     .btn-hero   { font-size: 16px; padding: 18px 42px; }
 }
