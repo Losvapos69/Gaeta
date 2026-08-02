@@ -163,8 +163,8 @@ body {
    ============================================ */
 .side-menu {
     position: fixed;
-    top: 0; right: -280px;
-    width: 260px; height: 100%;
+    top: 0; right: -290px;
+    width: 290px; height: 100%;
     background: var(--navy);
     z-index: 9998;
     transition: right 0.35s cubic-bezier(0.4,0,0.2,1);
@@ -785,14 +785,17 @@ body {
     .nav-logo img { height: 60px; }
 
     .side-menu-inner {
-    padding: 90px 30px 30px;
+    padding: 90px 24px 30px;
     gap: 15px;
     }
     .side-menu a {
+  
     font-size: 20px;
-    padding: 11px 14px;
-    }
-    
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(60, 105, 201, 0.89);
+    } 
+
 
     /*Inicio=Hero */
      .hero {
