@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes — Lic. Héctor Gaeta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="estillos.css">
+    <style>
+        /* Esta página está pensada para celular: se accede desde el menú lateral */
+        .faq-page-wrap { padding-top: 72px; }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR (el logo regresa al índice central) -->
+<nav class="navbar" id="navbar">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+            <img src="Logo.png" alt="Héctor Gaeta">
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Inicio</a></li>
+            <li><a href="index.html#about" class="nav-link">Sobre mí</a></li>
+            <li><a href="index.html#servicios" class="nav-link">Servicios</a></li>
+            <li><a href="index.html#ubicacion" class="nav-link">Ubicación</a></li>
+        </ul>
+        <div class="nav-cta">
+            <a href="contacto.html" class="btn-nav">Agendar consulta</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- MENÚ LATERAL -->
+<div class="side-menu" id="sideMenu">
+    <div class="side-menu-inner">
+        <p class="side-menu-title">Menú</p>
+        <a href="index.html">Inicio</a>
+        <a href="index.html#about">Sobre mí</a>
+        <a href="index.html#servicios">Servicios</a>
+        <a href="index.html#ubicacion">Ubicación</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="faq.html" class="nav-link active"><i class="fa-solid fa-magnifying-glass" style="margin-right:8px; color:var(--gold);"></i>Preguntas Frecuentes</a>
+    </div>
+</div>
+<div class="menu-overlay" id="menuOverlay" onclick="closeSideMenu()"></div>
+
+<!-- CONTENIDO -->
+<div class="faq-page-wrap">
+    <section class="faq" id="faq">
+        <div class="faq-inner">
+            <div class="section-header">
+                <span class="section-tag">DUDAS COMUNES</span>
+                <h2>Preguntas Frecuentes</h2>
+                <p class="sub">Respuestas rápidas a lo que más preguntan mis clientes antes de la primera consulta.</p>
+            </div>
+
+            <div class="faq-list">
+                <details class="faq-item" open>
+                    <summary>¿Qué debo hacer si me detienen o detienen a un familiar?</summary>
+                    <p class="faq-answer">Lo primero es mantener la calma y no declarar nada sin la presencia de un abogado. Contáctame de inmediato por WhatsApp; te explicaré tus derechos y los siguientes pasos según la situación.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Cuánto cuesta una primera consulta?</summary>
+                    <p class="faq-answer">El costo depende de la complejidad del caso. En la primera consulta se evalúa tu situación y se te da un presupuesto claro, sin compromisos ocultos.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Manejan casos fuera de Jalisco?</summary>
+                    <p class="faq-answer">La atención presencial es en Jalisco, pero se puede dar asesoría remota inicial para casos en otros estados, según el tipo de proceso.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Mi información está protegida?</summary>
+                    <p class="faq-answer">Sí. Toda la información que compartas está protegida bajo secreto profesional y nuestro <a href="privacidad.html" style="color:var(--navy); font-weight:600;">Aviso de Privacidad</a>.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Cuánto tarda un proceso penal?</summary>
+                    <p class="faq-answer">Varía mucho según el tipo de delito y la etapa procesal. En tu primera consulta te doy una estimación realista basada en casos similares.</p>
+                </details>
+            </div>
+
+            <p style="text-align:center; margin-top:36px;">
+                <a href="index.html" style="color:var(--navy); font-weight:600; font-size:16px; text-decoration:none;">← Regresar al inicio</a>
+            </p>
+        </div>
+    </section>
+</div>
+
+<!-- BOTÓN WHATSAPP FIJO -->
+<a href="https://wa.me/3334585066" target="_blank" class="whatsapp-btn" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+        navbar.classList.toggle('scrolled', window.scrollY > 40);
+    });
+
+    const menuToggle = document.getElementById('menuToggle');
+    const sideMenu   = document.getElementById('sideMenu');
+    const overlay    = document.getElementById('menuOverlay');
+
+    menuToggle.addEventListener('click', () => {
+        const open = sideMenu.classList.toggle('open');
+        overlay.classList.toggle('open', open);
+        menuToggle.classList.toggle('active', open);
+    });
+
+    function closeSideMenu() {
+        sideMenu.classList.remove('open');
+        overlay.classList.remove('open');
+        menuToggle.classList.remove('active');
+    }
+</script>
+
+</body>
+</html>

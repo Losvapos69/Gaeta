@@ -31,6 +31,10 @@
 
         <!-- CTA -->
         <div class="nav-cta">
+            <!-- Botón lupa: abre el menú de Preguntas Frecuentes (tablet/1080p/2K) -->
+            <button class="btn-lupa" id="btnLupa" aria-label="Preguntas frecuentes" aria-expanded="false">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
             <a href="contacto.html" class="btn-nav">Agendar consulta</a>
             <!-- Hamburguesa (móvil) -->
             <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
@@ -42,6 +46,41 @@
     </div>
 </nav>
 
+<!-- DROPDOWN DE PREGUNTAS FRECUENTES (tablet / 1080p / 2K) -->
+<div class="faq-dropdown" id="faqDropdown">
+    <div class="faq-dropdown-inner">
+        <div class="faq-dropdown-header">
+            <div>
+                <span>Dudas comunes</span>
+                <h3>Preguntas Frecuentes</h3>
+            </div>
+            <button class="faq-dropdown-close" id="faqDropdownClose" aria-label="Cerrar">✕</button>
+        </div>
+        <div class="faq-list">
+            <details class="faq-item">
+                <summary>¿Qué debo hacer si me detienen o detienen a un familiar?</summary>
+                <p class="faq-answer">Lo primero es mantener la calma y no declarar nada sin la presencia de un abogado. Contáctame de inmediato por WhatsApp; te explicaré tus derechos y los siguientes pasos según la situación.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Cuánto cuesta una primera consulta?</summary>
+                <p class="faq-answer">El costo depende de la complejidad del caso. En la primera consulta se evalúa tu situación y se te da un presupuesto claro, sin compromisos ocultos.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Manejan casos fuera de Jalisco?</summary>
+                <p class="faq-answer">La atención presencial es en Jalisco, pero se puede dar asesoría remota inicial para casos en otros estados, según el tipo de proceso.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Mi información está protegida?</summary>
+                <p class="faq-answer">Sí. Toda la información que compartas está protegida bajo secreto profesional y nuestro <a href="privacidad.html" style="color:var(--navy); font-weight:600;">Aviso de Privacidad</a>.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Cuánto tarda un proceso penal?</summary>
+                <p class="faq-answer">Varía mucho según el tipo de delito y la etapa procesal. En tu primera consulta te doy una estimación realista basada en casos similares.</p>
+            </details>
+        </div>
+    </div>
+</div>
+
 <!-- MENÚ LATERAL (móvil) -->
 <div class="side-menu" id="sideMenu">
     <div class="side-menu-inner">
@@ -51,6 +90,7 @@
         <a href="#servicios" onclick="closeSideMenu()">Servicios</a>
         <a href="#ubicacion" onclick="closeSideMenu()">Ubicación</a>
         <a href="contacto.html">Contacto</a>
+        <a href="faq.html"><i class="fa-solid fa-magnifying-glass" style="margin-right:8px; color:var(--gold);"></i>Preguntas Frecuentes</a>
     </div>
 </div>
 <div class="menu-overlay" id="menuOverlay" onclick="closeSideMenu()"></div>
@@ -108,6 +148,8 @@
             <p class="about-description"> 
                 Soy el Licenciado Héctor Gaeta, especialista en derecho penal con amplia experiencia en defensa estratégica. Mi compromiso es brindarte asesoría honesta, clara y enfocada en resultados concretos.
             </p>
+
+            <p class="cedula-line"><i class="fa-solid fa-certificate"></i> Cédula Profesional: [agrega aquí tu número de cédula]</p>
 
             <div class="features">
                 <div class="feature-item">
@@ -196,16 +238,75 @@
                 <hr style="border-color:rgba(255,255,255,0.1); margin:16px 0;">
                 <p><i class="fa-brands fa-whatsapp" style="color:#25D366"></i> &nbsp;<a href="https://wa.me/3334585066" style="color:white">333 458 5066</a></p>
                 <p style="margin-top:8px"><i class="fa-solid fa-envelope" style="color:#4da6ff"></i> &nbsp;<a href="mailto:lic.gaeta@hotmail.com" style="color:white">lic.gaeta@hotmail.com</a></p>
+
+                <div class="horario-box">
+                    <strong>Horario de atención</strong>
+                    <p>Lunes a viernes: 9:00 am – 7:00 pm<br>
+                    Sábados: 9:00 am – 1:00 pm<br>
+                    Urgencias vía WhatsApp: 24/7</p>
+                </div>
             </div>
 
             <div class="mapa">
                 <iframe
                     src="https://www.google.com/maps?q=Puente+Grande+Jalisco&output=embed"
                     width="100%"
-                    height="280"
+                    height="100%"
                     style="border:0;"
                     allowfullscreen="">
                 </iframe>
+            </div>
+        </div>
+
+        <p class="ubicacion-nota">La oficina se encuentra a corta distancia del Centro de Justicia de Puente Grande, lo que permite una respuesta ágil ante audiencias, notificaciones y trámites urgentes.</p>
+    </div>
+</section>
+
+<!-- ══════════════════════════════════
+     TESTIMONIOS (NUEVO)
+══════════════════════════════════ -->
+<section class="testimonios" id="testimonios">
+    <div class="testimonios-inner">
+        <div class="section-header">
+            <span class="section-tag">TESTIMONIOS</span>
+            <h2>Lo que dicen  mis clientes</h2>
+            <p class="sub">La confianza se construye caso por caso. Esto es lo que comparten quienes ya confiaron su defensa.</p>
+        </div>
+
+        <!-- ⚠️ EJEMPLO: reemplaza estos testimonios por reseñas reales de tus clientes (o pídeles su reseña de Google) -->
+        <div class="testimonios-grid">
+            <div class="testimonio-card">
+                <div class="testimonio-stars">★★★★★</div>
+                <p class="testimonio-text">"Me sentí acompañado en todo momento. El Lic. Gaeta explicó cada paso del proceso con claridad y siempre estuvo disponible."</p>
+                <div class="testimonio-autor">
+                    <div class="testimonio-avatar">R.M.</div>
+                    <div>
+                        <strong>R. M.</strong>
+                        <span>Cliente, Derecho Penal</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonio-card">
+                <div class="testimonio-stars">★★★★★</div>
+                <p class="testimonio-text">"Profesionalismo y honestidad desde la primera consulta. Recomiendo ampliamente su trabajo."</p>
+                <div class="testimonio-autor">
+                    <div class="testimonio-avatar">A.L.</div>
+                    <div>
+                        <strong>A. L.</strong>
+                        <span>Cliente, Asesoría Legal</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonio-card">
+                <div class="testimonio-stars">★★★★★</div>
+                <p class="testimonio-text">"Respuesta rápida y estrategia clara. Hoy puedo decir que mi caso se resolvió gracias a su experiencia."</p>
+                <div class="testimonio-autor">
+                    <div class="testimonio-avatar">J.P.</div>
+                    <div>
+                        <strong>J. P.</strong>
+                        <span>Cliente, Defensa Jurídica</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -224,6 +325,7 @@
             <a href="#about">Sobre mí</a>
             <a href="#servicios">Servicios</a>
             <a href="contacto.html">Contacto</a>
+            <a href="privacidad.html">Aviso de Privacidad</a>
         </div>
     </div>
 </footer>
@@ -285,11 +387,39 @@
         });
     });
 
+    // ── Dropdown de Preguntas Frecuentes (botón lupa)
+    const btnLupa      = document.getElementById('btnLupa');
+    const faqDropdown   = document.getElementById('faqDropdown');
+    const faqDropdownX = document.getElementById('faqDropdownClose');
+
+    function toggleFaqDropdown(forceClose) {
+        const open = forceClose ? false : !faqDropdown.classList.contains('open');
+        faqDropdown.classList.toggle('open', open);
+        btnLupa.classList.toggle('active', open);
+        btnLupa.setAttribute('aria-expanded', open);
+    }
+
+    if (btnLupa && faqDropdown) {
+        btnLupa.addEventListener('click', (e) => {
+            e.stopPropagation();
+            toggleFaqDropdown();
+        });
+        faqDropdownX.addEventListener('click', () => toggleFaqDropdown(true));
+        document.addEventListener('click', (e) => {
+            if (!faqDropdown.contains(e.target) && e.target !== btnLupa) {
+                toggleFaqDropdown(true);
+            }
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') toggleFaqDropdown(true);
+        });
+    }
+
     // ── Animación de entrada al scroll
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
     }, { threshold: 0.12 });
-    document.querySelectorAll('.about-container, .cards, .card, .ubicacion-container, .stat').forEach(el => observer.observe(el));
+    document.querySelectorAll('.about-container, .cards, .card, .ubicacion-container, .stat, .testimonios-grid').forEach(el => observer.observe(el));
 </script>
 
 </body>

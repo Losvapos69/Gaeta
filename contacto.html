@@ -138,14 +138,14 @@
             padding: 8px 8px;
             flex: 1 1 320px;
             max-width: 460px;
-            box-shadow: rgba(176, 185, 46, 0.2) 0 10px 60px;
-            background-color: #2f13cc67;
-            border: 2px solid #1e3a5fb0;
+            box-shadow: rgba(124, 123, 69, 0.575) 0 10px 60px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .contacto-form__content {
             background-color: #112240;
-            border-radius: 20px;
+            border-radius: 18px;
             width: 100%;
             height: 100%;
         }
@@ -254,9 +254,19 @@
             .contacto-datos { padding: 28px 20px; }
             .contacto-form { padding: 4px 4px; border: 0.5px;}
             .contacto-header { margin-top: 18px; margin: 18px;}
-            .contacto-datos h3 { font-size: 20px; }
-            .dato-info strong { font-size: 15px; }
-            .dato-info a, .dato-info p { font-size: 16px; }
+            .contacto-datos h3 { font-size: 24px; }
+            .form-group label { font-size: 17px; }
+            .form-group input, .form-group textarea, .form-group select {
+                font-size: 16.7px;
+                padding: 10px 12px;}
+            #nombre {padding: 13px 10px; font-size: 16.5px; margin: 0 10.3px; width:95% ;}
+            #telefono {padding: 13px 10px; font-size: 16.5px; margin: 0 10.3px; width:95% ;}
+            #asunto {padding: 13px 10px; font-size: 16.5px; margin: 0 10.3px; width:95% ;}
+            #mensaje {padding: 13px 10px; font-size: 16.5px; margin: 0 10.3px; width:95% ;}
+
+            .dato-item .dato-icon { width: 48px; height: 48px; font-size: 20px; }
+            .dato-info strong { font-size: 16px; }
+            .dato-info a, .dato-info p { font-size: 18.5px; }
         }
 
         @media (min-width: 390px) and (max-width: 844px) {
@@ -267,19 +277,19 @@
             
         }
 
-        @media (min-width: 1200px) {
-            .contacto-header h1 { font-size: 52px; }
-            .contacto-datos { max-width: 360px; }
-            .contacto-form  { max-width: 480px; }
-        }
-
         /* ============================================
         1080p — 1200px–2159px
         ============================================ */
         @media (min-width: 1200px) and (max-width: 2159px) {
             .contacto-header h1 { font-size: 45px; }
-            .contacto-page { padding-top: 90px; }
+            .contacto-header { margin-bottom: 20px; }
+            .contacto-grid { max-width: 1000px;}
+            .contacto-page { padding-top: 120px; }
+            .contacto-datos { max-width: 400px; }
             .contacto-form  { max-width: 640px; padding: 1.5px 1.5px; }
+            .contacto-datos h3 { font-size: 20px; }
+            .dato-info strong { font-size: 15px; }
+            .dato-info a, .dato-info p { font-size: 18px; }
             .form-group input, .form-group textarea, .form-group select {
             width: 100%;
             padding: 12px 14px;
@@ -290,9 +300,15 @@
             color: #111;
             background: #f9f9f9;
             transition: border 0.2s, background 0.2s;
-            outline: none;
-        }
-            #nombre {padding: 13px 10px; margin: 0 12px; width:95% ;}    
+            outline: none;}
+
+            .horario-box p { font-size: 17px;}
+
+            .form-group label {font-size: 15px; margin-left: 15px;} 
+            #nombre {padding: 13px 10px; font-size: 18px; margin: 0 15px; width:94.5% ;}
+            #telefono {padding: 13px 10px; font-size: 18px; margin: 0 15px;  width:94.5% ;}
+            #asunto {padding: 13px 10px;  font-size: 18px; margin: 0 15px;  width:94.5% ;}
+            #mensaje {padding: 13px 10px; font-size: 18px; margin: 0 15px;  width:94.5% ;}
         }
 
         @media (min-width: 2160px) {
@@ -335,6 +351,9 @@
             <li><a href="index.html#ubicacion" class="nav-link">Ubicación</a></li>
         </ul>
         <div class="nav-cta">
+            <button class="btn-lupa" id="btnLupa" aria-label="Preguntas frecuentes" aria-expanded="false">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
             <a href="contacto.html" class="btn-nav">Agendar consulta</a>
             <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
                 <span></span><span></span><span></span>
@@ -342,6 +361,41 @@
         </div>
     </div>
 </nav>
+
+<!-- DROPDOWN DE PREGUNTAS FRECUENTES (tablet / 1080p / 2K) -->
+<div class="faq-dropdown" id="faqDropdown">
+    <div class="faq-dropdown-inner">
+        <div class="faq-dropdown-header">
+            <div>
+                <span>Dudas comunes</span>
+                <h3>Preguntas Frecuentes</h3>
+            </div>
+            <button class="faq-dropdown-close" id="faqDropdownClose" aria-label="Cerrar">✕</button>
+        </div>
+        <div class="faq-list">
+            <details class="faq-item">
+                <summary>¿Qué debo hacer si me detienen o detienen a un familiar?</summary>
+                <p class="faq-answer">Lo primero es mantener la calma y no declarar nada sin la presencia de un abogado. Contáctame de inmediato por WhatsApp; te explicaré tus derechos y los siguientes pasos según la situación.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Cuánto cuesta una primera consulta?</summary>
+                <p class="faq-answer">El costo depende de la complejidad del caso. En la primera consulta se evalúa tu situación y se te da un presupuesto claro, sin compromisos ocultos.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Manejan casos fuera de Jalisco?</summary>
+                <p class="faq-answer">La atención presencial es en Jalisco, pero se puede dar asesoría remota inicial para casos en otros estados, según el tipo de proceso.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Mi información está protegida?</summary>
+                <p class="faq-answer">Sí. Toda la información que compartas está protegida bajo secreto profesional y nuestro <a href="privacidad.html" style="color:var(--navy); font-weight:600;">Aviso de Privacidad</a>.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Cuánto tarda un proceso penal?</summary>
+                <p class="faq-answer">Varía mucho según el tipo de delito y la etapa procesal. En tu primera consulta te doy una estimación realista basada en casos similares.</p>
+            </details>
+        </div>
+    </div>
+</div>
 
 <!-- MENÚ LATERAL -->
 <div class="side-menu" id="sideMenu">
@@ -352,6 +406,7 @@
         <a href="index.html#servicios">Servicios</a>
         <a href="index.html#ubicacion">Ubicación</a>
         <a href="contacto.html" onclick="closeSideMenu()">Contacto</a>
+        <a href="faq.html"><i class="fa-solid fa-magnifying-glass" style="margin-right:8px; color:var(--gold);"></i>Preguntas Frecuentes</a>
     </div>
 </div>
 <div class="menu-overlay" id="menuOverlay" onclick="closeSideMenu()"></div>
@@ -402,6 +457,13 @@
                     <p>Zona cercana al Centro de Justicia,<br>Puente Grande, Jalisco.</p>
                 </div>
             </div>
+
+            <div class="horario-box">
+                <strong>Horario de atención</strong>
+                <p>Lunes a viernes: 9:00 am – 7:00 pm<br>
+                Sábados: 9:00 am – 1:00 pm<br>
+                Urgencias vía WhatsApp: 24/7</p>
+            </div>
         </div>
 
         <!-- Formulario -->
@@ -437,16 +499,26 @@
                 <textarea id="mensaje" placeholder="Describe brevemente tu situación..."></textarea>
             </div>
 
+            <p id="form-error" style="color:#ff8080; font-size:13px; margin:-6px 0 12px; display:none;">Por favor completa tu nombre y teléfono antes de enviar.</p>
+
             <button class="btn-enviar" onclick="enviarWhatsApp()">
                 <i class="fa-brands fa-whatsapp"></i> Enviar por WhatsApp
             </button>
+
+            <p class="contacto-form-nota" style="font-size:12.5px; color:#8a93a8; text-align:center; margin-top:14px; line-height:1.6;">
+                ¿Prefieres correo? Escríbenos a <a href="mailto:lic.gaeta@hotmail.com" style="color:var(--blue);">lic.gaeta@hotmail.com</a>.<br>
+                Al enviar aceptas nuestro <a href="privacidad.html" style="color:var(--blue);">Aviso de Privacidad</a>.
+            </p>
         </div>
 
     </div>
+    </div>
+    <!-- ^ cierra .contacto-grid (faltaba en el original) -->
 
     <a href="index.html" class="back-link">
         <i class="fa-solid fa-arrow-left"></i> Regresar al inicio
     </a>
+    <a href="privacidad.html" style="color:rgba(255,255,255,0.4); font-size:13px; text-decoration:none; margin-top:14px; position:relative; z-index:1;">Aviso de Privacidad</a>
 </main>
 
 <!-- BOTÓN WHATSAPP FIJO -->
@@ -478,12 +550,52 @@
         menuToggle.classList.remove('active');
     }
 
+    // Dropdown de Preguntas Frecuentes (botón lupa)
+    const btnLupa      = document.getElementById('btnLupa');
+    const faqDropdown   = document.getElementById('faqDropdown');
+    const faqDropdownX = document.getElementById('faqDropdownClose');
+
+    function toggleFaqDropdown(forceClose) {
+        const open = forceClose ? false : !faqDropdown.classList.contains('open');
+        faqDropdown.classList.toggle('open', open);
+        btnLupa.classList.toggle('active', open);
+        btnLupa.setAttribute('aria-expanded', open);
+    }
+
+    if (btnLupa && faqDropdown) {
+        btnLupa.addEventListener('click', (e) => {
+            e.stopPropagation();
+            toggleFaqDropdown();
+        });
+        faqDropdownX.addEventListener('click', () => toggleFaqDropdown(true));
+        document.addEventListener('click', (e) => {
+            if (!faqDropdown.contains(e.target) && e.target !== btnLupa) {
+                toggleFaqDropdown(true);
+            }
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') toggleFaqDropdown(true);
+        });
+    }
+
     // Enviar formulario por WhatsApp
     function enviarWhatsApp() {
-        const nombre   = document.getElementById('nombre').value.trim()   || '(sin nombre)';
-        const telefono = document.getElementById('telefono').value.trim() || '(sin teléfono)';
+        const nombreInput   = document.getElementById('nombre');
+        const telefonoInput = document.getElementById('telefono');
+        const errorMsg      = document.getElementById('form-error');
+
+        // Validación mínima: nombre y teléfono son obligatorios
+        if (!nombreInput.value.trim() || !telefonoInput.value.trim()) {
+            errorMsg.style.display = 'block';
+            (!nombreInput.value.trim() ? nombreInput : telefonoInput).focus();
+            return;
+        }
+        errorMsg.style.display = 'none';
+
+        const nombre   = nombreInput.value.trim();
+        const telefono = telefonoInput.value.trim();
         const asunto   = document.getElementById('asunto').value          || 'General';
-        const mensaje  = document.getElementById('mensaje').value.trim()  || '';
+        const mensaje  = document.getElementById('mensaje').value.trim()  || '(sin mensaje adicional)';
 
         const numero = '3334585066'; // ✏️ CAMBIA AQUÍ
 

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviso de Privacidad — Lic. Héctor Gaeta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="estillos.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+            <img src="Logo.png" alt="Héctor Gaeta">
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Inicio</a></li>
+            <li><a href="index.html#about" class="nav-link">Sobre mí</a></li>
+            <li><a href="index.html#servicios" class="nav-link">Servicios</a></li>
+            <li><a href="index.html#ubicacion" class="nav-link">Ubicación</a></li>
+        </ul>
+        <div class="nav-cta">
+            <button class="btn-lupa" id="btnLupa" aria-label="Preguntas frecuentes" aria-expanded="false">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <a href="contacto.html" class="btn-nav">Agendar consulta</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- DROPDOWN DE PREGUNTAS FRECUENTES (tablet / 1080p / 2K) -->
+<div class="faq-dropdown" id="faqDropdown">
+    <div class="faq-dropdown-inner">
+        <div class="faq-dropdown-header">
+            <div>
+                <span>Dudas comunes</span>
+                <h3>Preguntas Frecuentes</h3>
+            </div>
+            <button class="faq-dropdown-close" id="faqDropdownClose" aria-label="Cerrar">✕</button>
+        </div>
+        <div class="faq-list">
+            <details class="faq-item">
+                <summary>¿Qué debo hacer si me detienen o detienen a un familiar?</summary>
+                <p class="faq-answer">Lo primero es mantener la calma y no declarar nada sin la presencia de un abogado. Contáctame de inmediato por WhatsApp; te explicaré tus derechos y los siguientes pasos según la situación.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Cuánto cuesta una primera consulta?</summary>
+                <p class="faq-answer">El costo depende de la complejidad del caso. En la primera consulta se evalúa tu situación y se te da un presupuesto claro, sin compromisos ocultos.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Manejan casos fuera de Jalisco?</summary>
+                <p class="faq-answer">La atención presencial es en Jalisco, pero se puede dar asesoría remota inicial para casos en otros estados, según el tipo de proceso.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Mi información está protegida?</summary>
+                <p class="faq-answer">Sí. Toda la información que compartas está protegida bajo secreto profesional y nuestro <a href="privacidad.html" style="color:var(--navy); font-weight:600;">Aviso de Privacidad</a>.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Cuánto tarda un proceso penal?</summary>
+                <p class="faq-answer">Varía mucho según el tipo de delito y la etapa procesal. En tu primera consulta te doy una estimación realista basada en casos similares.</p>
+            </details>
+        </div>
+    </div>
+</div>
+
+<!-- MENÚ LATERAL -->
+<div class="side-menu" id="sideMenu">
+    <div class="side-menu-inner">
+        <p class="side-menu-title">Menú</p>
+        <a href="index.html">Inicio</a>
+        <a href="index.html#about">Sobre mí</a>
+        <a href="index.html#servicios">Servicios</a>
+        <a href="index.html#ubicacion">Ubicación</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="faq.html"><i class="fa-solid fa-magnifying-glass" style="margin-right:8px; color:var(--gold);"></i>Preguntas Frecuentes</a>
+    </div>
+</div>
+<div class="menu-overlay" id="menuOverlay" onclick="closeSideMenu()"></div>
+
+<!-- CONTENIDO -->
+<main class="legal-page">
+    <span class="section-tag">AVISO LEGAL</span>
+    <h1>Aviso de Privacidad</h1>
+    <p class="legal-fecha">Última actualización: [agrega la fecha aquí]</p>
+
+    <p>En cumplimiento con la Ley Federal de Protección de Datos Personales en Posesión de los Particulares, el despacho del Lic. Héctor Gaeta ("el Despacho") pone a tu disposición el presente Aviso de Privacidad.</p>
+
+    <h2>1. Datos que recabamos</h2>
+    <p>Al contactarnos por este sitio web, WhatsApp, teléfono o correo electrónico, podemos recabar: nombre completo, teléfono, correo electrónico y la información que decidas compartir sobre tu situación legal.</p>
+
+    <h2>2. Finalidad del tratamiento</h2>
+    <ul>
+        <li>Responder tus solicitudes de asesoría o consulta.</li>
+        <li>Dar seguimiento a tu caso en caso de contratar nuestros servicios.</li>
+        <li>Contactarte para agendar citas o brindarte información relevante sobre tu proceso.</li>
+    </ul>
+
+    <h2>3. Confidencialidad</h2>
+    <p>Toda la información compartida está protegida bajo el secreto profesional del abogado y no será divulgada a terceros sin tu consentimiento, salvo requerimiento de autoridad competente.</p>
+
+    <h2>4. Uso de cookies y datos de navegación</h2>
+    <p>Este sitio puede utilizar herramientas básicas de análisis de tráfico web. No se venden ni comparten datos personales con fines publicitarios.</p>
+
+    <h2>5. Derechos ARCO</h2>
+    <p>Tienes derecho a acceder, rectificar, cancelar u oponerte al uso de tus datos personales (derechos ARCO). Para ejercerlos, escríbenos a <a href="mailto:lic.gaeta@hotmail.com">lic.gaeta@hotmail.com</a>.</p>
+
+    <h2>6. Cambios a este aviso</h2>
+    <p>Este aviso puede actualizarse periódicamente. Cualquier cambio será publicado en esta misma página.</p>
+
+    <p style="margin-top:40px;"><a href="index.html">← Regresar al inicio</a></p>
+</main>
+
+<!-- BOTÓN WHATSAPP FIJO -->
+<a href="https://wa.me/3334585066" target="_blank" class="whatsapp-btn" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+        navbar.classList.toggle('scrolled', window.scrollY > 40);
+    });
+
+    const menuToggle = document.getElementById('menuToggle');
+    const sideMenu   = document.getElementById('sideMenu');
+    const overlay    = document.getElementById('menuOverlay');
+
+    menuToggle.addEventListener('click', () => {
+        const open = sideMenu.classList.toggle('open');
+        overlay.classList.toggle('open', open);
+        menuToggle.classList.toggle('active', open);
+    });
+
+    function closeSideMenu() {
+        sideMenu.classList.remove('open');
+        overlay.classList.remove('open');
+        menuToggle.classList.remove('active');
+    }
+
+    // Dropdown de Preguntas Frecuentes (botón lupa)
+    const btnLupa      = document.getElementById('btnLupa');
+    const faqDropdown   = document.getElementById('faqDropdown');
+    const faqDropdownX = document.getElementById('faqDropdownClose');
+
+    function toggleFaqDropdown(forceClose) {
+        const open = forceClose ? false : !faqDropdown.classList.contains('open');
+        faqDropdown.classList.toggle('open', open);
+        btnLupa.classList.toggle('active', open);
+        btnLupa.setAttribute('aria-expanded', open);
+    }
+
+    if (btnLupa && faqDropdown) {
+        btnLupa.addEventListener('click', (e) => {
+            e.stopPropagation();
+            toggleFaqDropdown();
+        });
+        faqDropdownX.addEventListener('click', () => toggleFaqDropdown(true));
+        document.addEventListener('click', (e) => {
+            if (!faqDropdown.contains(e.target) && e.target !== btnLupa) {
+                toggleFaqDropdown(true);
+            }
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') toggleFaqDropdown(true);
+        });
+    }
+</script>
+
+</body>
+</html>
