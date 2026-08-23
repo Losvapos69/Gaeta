@@ -1207,11 +1207,69 @@ body {
     .footer p, .footer-links a { font-size: 16px; }
     
 }
+@media (min-width: 1200px) and (max-width: 1536px) {
+    .nav-inner { max-width: 1440px; height: 70px; padding: 0 5.2rem; margin: 0 0; }
+    .nav-link { font-size: 17px; }
+    .nav-logo img { height: 60px;}
+    .btn-nav { font-size: 16px; padding: 12px 15px; }
+
+    .whatsapp-btn { width: 10vh; height: 9.8vh; font-size: 2.7rem; right: 4vh; bottom: 4vh; }
+
+    .hero-left { max-width: 400px; margin-top: 90px;}
+    .tag { font-size: 14px; letter-spacing: 2px; margin-bottom: 10px; }
+    .hero-title { font-size: 59px; line-height: 1;}
+    .hero-sub   { font-size: 20px; padding: 0 0; margin-bottom: 15px; }
+    .hero-desc  { font-size: 18px; margin-bottom: 13px; text-align: justify; line-height: 1.5; }
+    .btn-hero   { font-size: 16px; padding: 18px 42px; text-align: center; align-items: center; justify-content: center; display: flex; margin: 0 60px 0 36px; }
+    .stats-row { margin-bottom: 20px; }
+    .stat-num   { font-size: 40px; }
+    .stat-lbl   { font-size: 12px; }
+
+    .about { padding: 100px 1px 100px 1px; }
+    .about-container { max-width: 90%; gap: 80px; }
+    .about-img-wrap img { width: 550px; }
+    .about-badge span:last-child { font-size: 15px; }
+    .about-text h2 { font-size: 36px; }
+    .about-text p  { font-size: 20.3px; line-height: 1.5; text-align: justify; }
+    .feature-item h4 { font-size: 17px; }
+
+    .section-tag { font-size: 12px;}
+    .section-header h2 { font-size: 42px; }
+    .sub { font-size: 19px; line-height: 1.5;}
+    .card { padding: 29px; }
+    .cards { max-width: 1100px; gap: 24px; }
+    .card h3 { font-size: 23px; }
+    .card p { font-size: 19px; line-height: 1.5; text-align: justify; }
+    .escudo-bg { width: auto; height: 50px; display: flex; justify-content: left; padding: 0px 0 10px; }
+    .icon { font-size: 40px; margin-bottom: 10px; }
+
+    .faq-dropdown-header span { font-size: 10px; letter-spacing: 2px; }
+    .faq-dropdown-header h3 { font-size: 18px; }
+    .faq-dropdown {width: 780px; right: 15px;}
+    .faq-answer {color: rgb(204 174 99);}
+    .faq-dropdown .faq-item summary { font-size: 17px; padding: 10px 0; }
+    .faq-dropdown .faq-answer { font-size: 18px; padding-bottom: 16px; text-align: justify; line-height: 1.6;}
+    .faq-item summary::after { font-size: 25px; }
+
+    .ubicacion { padding: 80px 1px 120px 1px; }
+    .ubicacion-inner { max-width: 1300px; height: auto;}
+    .ubicacion-nota { font-size: 14px; }
+    .mapa { max-width: 550px; height: 400px; }
+    .info { width: 400px; padding: 30px; }
+    .info h3 { font-size: 22px; }
+    .info p { font-size: 18px; line-height: 1.6; }
+    .horario-box strong { font-size: 18px; }
+
+    .testimonios { padding: 80px 1px 100px 1px; }
+    .testimonio-stars { font-size: 20px; }
+    .testimonio-text { font-size: 17px; line-height: 1.7; }
+}
+
 
 /* ============================================
    1080p — 1200px–2159px
    ============================================ */
-@media (min-width: 1200px) and (max-width: 2159px) {
+@media (min-width: 1537px) and (max-width: 2159px) {
      /* Navbar */
     .nav-inner { max-width: 1920px; height: 80px; padding: 0 2.5rem; }
     .nav-link { font-size: 18px; }
@@ -1233,8 +1291,8 @@ body {
     .about-text h2 { font-size: 36px; }
     .about-text p  { font-size: 20.3px; line-height: 1.5; text-align: justify; }
     .feature-item h4 { font-size: 17px; }
-    .section-tag { font-size: 13px;}
 
+    .section-tag { font-size: 13px;}
     .section-header h2 { font-size: 48px; }
     .sub { font-size: 20px; line-height: 1.5;}
     .card { padding: 29px; }

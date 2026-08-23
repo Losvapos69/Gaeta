@@ -246,6 +246,15 @@
 
         .back-link:hover { color: var(--gold); }
 
+        
+        @media (min-width: 390px) and (max-width: 844px) {
+            .contacto-page { padding-top: 90px; }
+            .contacto-header h1 { font-size: 36px; }
+            .contacto-datos { max-width: 100%; }
+            .contacto-form { max-width: 100%; padding: 4px 4px; border-radius: 23px;}
+            
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
             .contacto-page { padding-top: 90px; }
@@ -269,18 +278,41 @@
             .dato-info a, .dato-info p { font-size: 18.5px; }
         }
 
-        @media (min-width: 390px) and (max-width: 844px) {
-            .contacto-page { padding-top: 90px; }
-            .contacto-header h1 { font-size: 36px; }
-            .contacto-datos { max-width: 100%; }
-            .contacto-form { max-width: 100%; padding: 4px 4px; border-radius: 23px;}
-            
+        @media (min-width: 1200px) and (max-width: 1536px) {
+            .contacto-page { padding-top: 100px; padding-bottom: 40px;}
+            .contacto-header h1 { font-size: 35px; }
+            .contacto-header { margin-bottom: 14px; }
+            .contacto-grid { max-width: 1100px;}
+            .contacto-datos { max-width: 500px; }
+            .contacto-form  { max-width: 640px; padding: 1.5px 1.5px; }
+            .contacto-datos h3 { font-size: 20px; }
+            .dato-info strong { font-size: 15px; }
+            .dato-info a, .dato-info p { font-size: 18px; }
+            .form-group input, .form-group textarea, .form-group select {
+            width: 100%;
+            padding: 12px 14px;
+            border: 1.5px solid #e8e8e8;
+            border-radius: 11px;
+            font-family: 'Arial', sans-serif;
+            font-size: 15px;
+            color: #111;
+            background: #f9f9f9;
+            transition: border 0.2s, background 0.2s;
+            outline: none;}
+
+            .horario-box p { font-size: 17px;}
+
+            .form-group label {font-size: 15px; margin-left: 15px;} 
+            #nombre {padding: 13px 10px; font-size: 18px; margin: 0 15px; width:94.5% ;}
+            #telefono {padding: 13px 10px; font-size: 18px; margin: 0 15px; width:94.5% ;}
+            #asunto {padding: 13px 10px; font-size: 18px; margin: 0 15px; width:94.5% ;}
+            #mensaje {padding: 13px 10px; font-size: 18px; margin: 0 15px; width:94.5% ;}
         }
 
         /* ============================================
         1080p — 1200px–2159px
         ============================================ */
-        @media (min-width: 1200px) and (max-width: 2159px) {
+        @media (min-width: 1537px) and (max-width: 2159px) {
             .contacto-header h1 { font-size: 45px; }
             .contacto-header { margin-bottom: 20px; }
             .contacto-grid { max-width: 1000px;}
@@ -416,7 +448,7 @@
 
     <div class="contacto-header">
         <span class="section-tag">CONTÁCTANOS</span>
-        <h1>¿Necesitas asesoría<br>legal?</h1>
+        <h1>¿Necesitas asesoría legal?</h1>
         <p class="subtitulo">Lic. Héctor Gaeta — Abogado Penalista · Jalisco</p>
     </div>
 
